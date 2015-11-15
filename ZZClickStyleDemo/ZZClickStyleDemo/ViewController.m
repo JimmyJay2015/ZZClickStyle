@@ -18,10 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    CGRect screenSize = [UIScreen mainScreen].bounds;
     
-    UIButton *buttonTest1 = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 200, 40)];
+    UIButton *buttonTest1 = [[UIButton alloc] initWithFrame:CGRectMake((screenSize.size.width - 200)/2, 100, 200, 40)];
     buttonTest1.backgroundColor = [UIColor redColor];
-    [buttonTest1 setTitle:@"click me" forState:UIControlStateNormal];
+    [buttonTest1 setTitle:@"click me and shake" forState:UIControlStateNormal];
     buttonTest1.layer.cornerRadius = 5.;
     
     [self.view addSubview:buttonTest1];
