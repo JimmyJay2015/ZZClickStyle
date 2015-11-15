@@ -15,6 +15,7 @@
 		039EA7B81BF882380058238A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039EA7B61BF882380058238A /* LaunchScreen.storyboard */; };
 		039EA7C31BF882380058238A /* ZZClickStyleDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 039EA7C21BF882380058238A /* ZZClickStyleDemoTests.m */; };
 		039EA7CE1BF882380058238A /* ZZClickStyleDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 039EA7CD1BF882380058238A /* ZZClickStyleDemoUITests.m */; };
+		039EA7DE1BF884380058238A /* UIView+ZZCS.m in Sources */ = {isa = PBXBuildFile; fileRef = 039EA7DD1BF884380058238A /* UIView+ZZCS.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		039EA7C91BF882380058238A /* ZZClickStyleDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZZClickStyleDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		039EA7CD1BF882380058238A /* ZZClickStyleDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZClickStyleDemoUITests.m; sourceTree = "<group>"; };
 		039EA7CF1BF882380058238A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		039EA7DC1BF884380058238A /* UIView+ZZCS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+ZZCS.h"; path = "ZZClickStyle/UIView+ZZCS.h"; sourceTree = "<group>"; };
+		039EA7DD1BF884380058238A /* UIView+ZZCS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+ZZCS.m"; path = "ZZClickStyle/UIView+ZZCS.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		039EA7A71BF882380058238A /* ZZClickStyleDemo */ = {
 			isa = PBXGroup;
 			children = (
+				039EA7DB1BF882C90058238A /* ZZClickStyle */,
 				039EA7AB1BF882380058238A /* AppDelegate.h */,
 				039EA7AC1BF882380058238A /* AppDelegate.m */,
 				039EA7AE1BF882380058238A /* ViewController.h */,
@@ -138,6 +142,15 @@
 				039EA7CF1BF882380058238A /* Info.plist */,
 			);
 			path = ZZClickStyleDemoUITests;
+			sourceTree = "<group>";
+		};
+		039EA7DB1BF882C90058238A /* ZZClickStyle */ = {
+			isa = PBXGroup;
+			children = (
+				039EA7DC1BF884380058238A /* UIView+ZZCS.h */,
+				039EA7DD1BF884380058238A /* UIView+ZZCS.m */,
+			);
+			name = ZZClickStyle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +285,7 @@
 			files = (
 				039EA7B01BF882380058238A /* ViewController.m in Sources */,
 				039EA7AD1BF882380058238A /* AppDelegate.m in Sources */,
+				039EA7DE1BF884380058238A /* UIView+ZZCS.m in Sources */,
 				039EA7AA1BF882380058238A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

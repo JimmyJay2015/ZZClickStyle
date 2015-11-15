@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIView+ZZCS.h"
 
 @interface ViewController ()
 
@@ -17,11 +18,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    UIButton *buttonTest1 = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 200, 40)];
+    buttonTest1.backgroundColor = [UIColor redColor];
+    [buttonTest1 setTitle:@"click me" forState:UIControlStateNormal];
+    buttonTest1.layer.cornerRadius = 5.;
+    
+    [self.view addSubview:buttonTest1];
+    
+    [buttonTest1 addTarget:self action:@selector(clicked:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)clicked:(id)sender
+{
+    UIView *target = (UIView *)sender;
+    
+    [target shake];
 }
 
 @end
